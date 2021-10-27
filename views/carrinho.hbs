@@ -1,0 +1,42 @@
+<div class="row mt-4">
+{{#each produtos}}
+
+  <div class="col-sm-6 mt-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{nome}}</h5>
+        <img src={{img}} class="card-img-top" alt="Camisa Preta">
+        <p class="card-text">{{desc}}</p>
+        <p class="card-text">R${{preco}}</p>
+        <a href="#" class="btn btn-success">Confirmar Compra</a>
+        <form method="POST" action="/carrinho/excluir">
+          <input type="hidden" name="id" value='{{_id}}'>
+          <button type="submit" class="btn btn-outline-danger mt-2"><i class="fas fa-trash"></i> Excluir</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+{{else}}
+
+{{/each}}
+</div>
+
+<nav aria-label="...">
+  <ul class="pagination mt-4">
+    <li class="page-item disabled">
+      <a class="page-link">Anterior</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active" aria-current="page">
+      <a class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Próximo</a>
+    </li>
+  </ul>
+</nav>

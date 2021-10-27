@@ -1,0 +1,51 @@
+<div class="card">
+
+  <div class="card-body">
+
+<h2> Cadastrar novo Produto</h2>
+<form action="/cadastrar/novoproduto" method="POST">
+  <label for="nome_produto" class="form-label">Titulo do Produto</label>
+  <input type="text" class="form-control" id="nome_produto" name="nome_produto" placeholder="">
+  <label for="desc_produto" class="form-label">Descrição do Produto</label>
+  <textarea class="form-control" id="desc_produto" name="desc_produto" rows="3"></textarea>
+
+	<label for="preco_produto" class="form-label">Preço do Produto</label>
+
+<div class="input-group mb-3">
+  <span class="input-group-text">R$</span>
+  <input id="preco_produto" name="preco_produto" type="text" class="form-control">
+  <span class="input-group-text">.00</span>
+</div>
+
+<label for="img_produto" class="form-label">Imagem do Produto</label>
+<div class="input-group mb-3">
+  <span class="input-group-text" id="basic-addon3">Link</span>
+  <input type="text" class="form-control" placeholder="https://example.com/img/camisa.png" id="img_produto" name="img_produto" aria-describedby="basic-addon3">
+</div>
+
+{{!-- 
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Incluir nos Favoritos?</h5>
+  </div>
+<div class="form-check ml-auto">
+  <input class="form-check-input " value="nao" type="radio" name="favoritos" id="not-fav">
+  <label class="form-check-label" for="not-fav">
+    Não
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="favoritos" id="yes-fav" value="sim" checked>
+  <label class="form-check-label" for="yes-fav">
+    Sim
+  </label>
+</div>
+</div> --}}
+
+
+<button type="submit" class="btn btn-success mt-2">Confirmar</button>	
+</form>
+</div>
+
+</div>
+</div>

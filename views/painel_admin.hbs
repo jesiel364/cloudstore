@@ -1,0 +1,19 @@
+
+		<div class="card">
+			<div class="card-body">
+				<h4>Usuários</h4>
+				{{#each usuarios}}
+					<div class="card mt-4">
+						<div class="card-body">
+							<h4 class="card-title">{{nome}}</h4>
+							<p class="card-subtitle">{{email}}</p>
+							<p class="card-text">{{senha}}</p>
+						</div>
+					</div>
+					
+
+				{{else}}
+
+				{{/each}}
+			</div>
+		</div>
