@@ -1,2 +1,2 @@
 # cloudstore
-Mini loja virtual feio com Bootstrap
+Mini loja virtual feio com NodeJS, Express e 
